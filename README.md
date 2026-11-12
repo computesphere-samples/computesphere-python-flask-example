@@ -66,6 +66,8 @@ gunicorn --bind=0.0.0.0:5000 app:app
 
 This runs the server on `localhost:5000`.
 
+The app listens on the port in the `PORT` environment variable when it is set, and on 5000 when it isn't. ComputeSphere sets `PORT` to your service's port, so the app answers where the platform expects it.
+
 ## Deploy to ComputeSphere
 
 See our [guide](https://docs.computesphere.com/docs/getting-started/quickstart/getting-started-with-flask) on how to deploy this project to ComputeSphere.
