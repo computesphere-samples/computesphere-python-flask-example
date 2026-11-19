@@ -1,4 +1,6 @@
-FROM python:alpine3.20
+# Python 3.13.18 (current 3.13 release). Pinned by digest so a stale cached
+# tag cannot bring back an older build.
+FROM python:3.13.18-alpine@sha256:9ef1a599f863231c3d91e941389bfdc4a2d6070557243d54df1a4e57015b960e
 
 WORKDIR /app
 
